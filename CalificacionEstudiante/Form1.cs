@@ -20,20 +20,30 @@ namespace CalificacionEstudiante
         private void btncalcular_Click(object sender, EventArgs e)
         {
 
-            double nota1, nota2, nota3, nota4, suma, resultado;
-            nota1 = double.Parse(txtnota1.Text);
-            nota2 = double.Parse(txtnota2.Text);
-            nota3 = double.Parse(txtnota3.Text);
-            nota4 = double.Parse(txtnota4.Text);
+            if (txtnota1.Text == "" || txtnota2.Text == "" || txtnota3.Text == "" || txtnota4.Text == "")
+            {
+                MessageBox.Show("Todos los campos debe estar diligenciado", "Mensaje de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else {
 
-            suma = nota1 + nota2 + nota3 + nota4;
+                double nota1, nota2, nota3, nota4, suma, resultado;
+                nota1 = double.Parse(txtnota1.Text);
+                nota2 = double.Parse(txtnota2.Text);
+                nota3 = double.Parse(txtnota3.Text);
+                nota4 = double.Parse(txtnota4.Text);
 
-            resultado = suma / 4;
+                suma = nota1 + nota2 + nota3 + nota4;
 
-            lblresultado.Text = Convert.ToString(resultado);
+                resultado = suma / 4;
 
-            label6.Visible = true;
-            lblresultado.Visible = true;
+                lblresultado.Text = Convert.ToString(resultado);
+
+                label6.Visible = true;
+                lblresultado.Visible = true;
+
+            }
+
+
 
         }
 
