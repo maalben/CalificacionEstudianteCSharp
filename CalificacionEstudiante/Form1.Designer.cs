@@ -41,6 +41,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblresultado = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnborrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -136,7 +137,7 @@
             // btncalcular
             // 
             this.btncalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcular.Location = new System.Drawing.Point(550, 247);
+            this.btncalcular.Location = new System.Drawing.Point(547, 146);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(181, 71);
             this.btncalcular.TabIndex = 9;
@@ -174,11 +175,23 @@
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 12;
             // 
+            // btnborrar
+            // 
+            this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnborrar.Location = new System.Drawing.Point(547, 247);
+            this.btnborrar.Name = "btnborrar";
+            this.btnborrar.Size = new System.Drawing.Size(181, 71);
+            this.btnborrar.TabIndex = 13;
+            this.btnborrar.Text = "Borrar";
+            this.btnborrar.UseVisualStyleBackColor = true;
+            this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblresultado);
             this.Controls.Add(this.label6);
@@ -214,6 +227,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblresultado;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnborrar;
     }
 }
 
